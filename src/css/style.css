@@ -1,0 +1,391 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1062px;
+    margin: 0 5%;
+}
+
+.header {
+    width: 100%;
+    margin: 5%;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 400 16px/1.7 "Playfair Display";
+    color: #626262;
+    margin-top: 2%;
+}
+
+.nav-link:hover {
+    color: #2e2e2e;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font: 400 38px/0.8 Inconsolata;
+    letter-spacing: 6px;
+    text-decoration: none;
+    color: #000;
+    margin-left: 3%;
+}
+
+.primary-article {
+    margin: 7.9% 0 1.7% 0;
+    width: 100%;
+}
+
+.title {
+    margin-top: 18px;
+    font: 400 24px "Playfair Display";
+    color: #626262;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font: 300 18px Ubuntu;
+    color: #b4ad9e;
+}
+
+.text {
+    margin: 27px 0 45px 0;
+    font: 400 18px/1.715 "Playfair Display";
+    color: #626262;
+}
+
+.card__subtitle {
+    margin-top: 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1.85% 0 6.8% 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 9.3%;
+    width: 100%;
+}
+
+.banner {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner__title {
+    margin-top: 66px;
+    font: 400 26px "Playfair Display";
+    color: #333;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.banner__form {
+    border-bottom: 1px solid #000;
+    margin: 52px 0 74px 0;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__input {
+    border: 0;
+    background: #f0f0f0;
+    font: 400 20px "Playfair Display";
+    color: #333;
+    width: 100%;
+    padding: 0 0 9px 0;
+    outline: none;
+}
+
+.banner__button {
+    border: 0;
+    padding: 9px 16px;
+    background: url("../img/icons/send_icon.png") no-repeat #f0f0f0 0 12%;
+    cursor: pointer;
+}
+
+.buttonAddCard {
+    max-width: 164px;
+    width: 100%;
+    height: 60px;
+    border-radius: 0;
+    border: 1px solid #626262;
+    margin-top: 55px;
+    font: 400 24px "Playfair Display";
+    color: #626262;
+    cursor: pointer;
+    background: #fff;
+}
+
+.buttonAddCard:hover {
+    color: #2e2e2e;
+    border-color: #2e2e2e;
+}
+
+.foother {
+    display: flex;
+    justify-content: center;
+    height: 97px;
+    background: #f0f0f0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.foother__panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.foother__left-side {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.foother__link {
+    font: 400 21px "Playfair Display";
+    color: #626262;
+    text-decoration: none;
+}
+
+.foother__link:hover {
+    color: #2e2e2e;
+}
+
+.foother__right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.foother__right-side_title {
+    font: 400 21px "Playfair Display";
+    color: #626262;
+    text-decoration: none;
+    margin: 0;
+}
+
+.foother__social-link {
+    margin: 0 5px;
+}
+
+.foother__social-link:hover {
+    filter: brightness(0.6);
+}
+
+.facebook-ico::before {
+    content: url("../img/icons/facebook.png");
+    padding: 7px;
+}
+
+.twitter-ico::before {
+    content: url("../img/icons/twitter.png");
+    padding: 7px;
+}
+
+.instagram-ico::before {
+    content: url("../img/icons/instagram.png");
+    padding: 7px;
+}
+
+img {
+    width: 100%;
+}
+
+.close {
+    display: none;
+}
+
+.header__button {
+    content: url("../img/icons/menu_button.svg");
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        margin: 0;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 68px 0 72px 0;
+    }
+
+    .navbar__links {
+        flex-direction: row;
+        width: 53.8%;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .navbar__logo {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .primary-article {
+        max-width: 900px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .cards {
+        max-width: 900px;
+    }
+
+    .card {
+        width: 46.6%;
+    }
+
+    .banner__main {
+        max-width: 900px;
+    }
+
+    .banner__form {
+        width: 43.3%;
+    }
+
+    .banner__input {
+        font-size: 22px;
+    }
+
+    .buttonAddCard {
+        font-size: 24px;
+    }
+
+    .foother__panel {
+        justify-content: space-evenly;
+        flex-direction: row;
+        max-width: 900px;
+    }
+
+    .foother__left-side {
+        margin: 0;
+        align-items: center;
+    }
+
+    .foother__link {
+        font-size: 20px;
+        margin-right: 16px;
+    }
+
+    .foother__right-side {
+        margin: 0;
+    }
+
+    .foother__right-side_title {
+        font-size: 20px;
+    }
+
+    .close {
+        display: flex;
+    }
+
+    .header__button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .navbar {
+        max-width: 1062px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .navbar__logo {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .banner__title {
+        font-size: 30px;
+    }
+
+    .banner__input {
+        font-size: 14px;
+    }
+
+    .buttonAddCard {
+        font-size: 20px;
+    }
+
+    .foother__panel {
+        justify-content: space-between;
+    }
+
+    .foother__link {
+        font-size: 14px;
+    }
+
+    .foother__right-side_title {
+        font-size: 14px;
+    }
+}
